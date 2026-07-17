@@ -90,3 +90,36 @@ let c = Number(prompt(" temperature "));
 let fahrenheit = CtoF(c);
 
 console.log("Temperature in Fahrenheit =", fahrenheit);
+
+
+
+//10
+
+
+function calcBMI(weight, height1) {
+    return weight / (height1 * height1);
+}
+
+let weight = Number(prompt("Enter your weight (kg):"));
+let height1 = Number(prompt("Enter your height (m):"));
+
+let bmi = calcBMI(weight, height1);
+
+console.log("Your BMI is:", bmi.toFixed(2));
+
+if (bmi < 18.5) {
+    console.log("Underweight");
+  
+} 
+else if (bmi >= 18.5 && bmi <= 24.9) {
+    console.log("Normal Weight");
+   
+} 
+else if (bmi >= 25 && bmi <= 29.9) {
+    console.log("Overweight");
+}
+   
+else {
+    console.log("Obese");
+
+}
